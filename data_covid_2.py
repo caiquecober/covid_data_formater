@@ -143,6 +143,7 @@ def plots_fixos(df):
     fig.add_trace(go.Scatter(x=df.index, y=df.iloc[:, i], line=dict(color=colors[i], width=2.25), name=df.columns[i]))
 
 
-df_fixo = data_for_fixed_viz(df)
+#df_fixo = data_for_fixed_viz(df)
+#st.write(df_fixo)
 
-st.write(df_fixo)
+
