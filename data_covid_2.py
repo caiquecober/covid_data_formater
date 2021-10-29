@@ -20,7 +20,7 @@ import io
 #gerando funcoes para a aplicação 
 @st.cache(allow_output_mutation=True)
 def get_covid_data():
-    url='https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/owid-covid-data.csv'
+    url='https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/owid-covid-codebook.csv'
     df= pd.read_csv(url, sep=',')
     return df
 
