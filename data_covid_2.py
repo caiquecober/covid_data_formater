@@ -61,7 +61,7 @@ def download_link(object_to_download, download_filename, download_link_text):
 
 def grafico(df):
     fig = go.Figure()
-    colors = [ '#0A3254', '#7AADD4', '#B2292E','#336094', '#E0D253']
+    colors = [ '#0A3254', '#7AADD4', '#B2292E','#336094', '#E0D253','#0A3264', '#8AADD4', '#B2290E','#339094', '#E0D353']
 
     for i in range(len(df.columns)):
         fig.add_trace(go.Scatter(x=df.index, y=df.iloc[:, i], line=dict(color=colors[i], width=2.25), name=df.columns[i]))
