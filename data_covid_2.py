@@ -139,7 +139,7 @@ def data_for_fixed_viz(df):
 
 def plots_fixos(df):
     fig = go.Figure()
-    colors = [ '#0A3254', '#7AADD4', '#B2292E','#336094', '#E0D253']
+    colors = [ '#0A3254', '#7AADD4', '#B2292E','#336094', '#E0D253','#0A3264', '#8AADD4', '#B2290E','#339094', '#E0D353']
     fig.add_trace(go.Scatter(x=df.index, y=df.iloc[:, i], line=dict(color=colors[i], width=2.25), name=df.columns[i]))
 
 
