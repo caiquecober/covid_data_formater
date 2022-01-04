@@ -29,7 +29,6 @@ def get_table_download_link(df, nome):
     in:  dataframe
     out: href string
     """
-    df['date'] = df['date'].strftime('d%/%m/%Y')
     towrite = io.BytesIO()
     downloaded_file = df.to_excel(towrite, encoding='utf-8', index=False, header=True)
     towrite.seek(0)  # reset pointer
