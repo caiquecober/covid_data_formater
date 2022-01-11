@@ -83,10 +83,10 @@ def grafico(df):
 #Montando o Apllicativo
 #carregando os dados
 df = get_covid_data()
-
+st.title('Uma simples aplicação para Facilitar a extração de dados da pandemia')
 st.write('Aplicação para simplificar o processo de extração e manipulação dos dados sobre o covid!')
 #gerando seção para escolher as variaveis iniciais
-with st.expander("Ver Opções"):
+with st.expander("⚙️ Configure as Opções"):
     loc_list = df['location'].drop_duplicates()
     loc_select = st.multiselect('select country',loc_list, default=["Brazil"])
     var_list = df.columns.to_list()
