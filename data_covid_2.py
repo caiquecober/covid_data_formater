@@ -83,8 +83,8 @@ def grafico(df):
 #Montando o Apllicativo
 #carregando os dados
 df = get_covid_data()
-st.title('Uma simples aplicação para Facilitar a extração de dados da pandemia')
-st.write('Aplicação para simplificar o processo de extração e manipulação dos dados sobre o covid!')
+st.title('Uma aplicação  para simplificar o processo de extração de dados por país da pandemia')
+#st.write('Aplicação para simplificar o processo de extração e manipulação dos dados sobre o covid!')
 #gerando seção para escolher as variaveis iniciais
 with st.expander("⚙️ Configure as Opções"):
     loc_list = df['location'].drop_duplicates()
@@ -101,7 +101,7 @@ with st.expander("⚙️ Configure as Opções"):
 #mostrando para o usuário os dados que ele escolheu como uma tabela e também comouma figura
 
 #Plotando a tabela
-st.write(data, use_container_width=True)
+#st.write(data, use_container_width=True)
 
 #gerando e plotando a figura, também fiz um leve ajuste para deixar resetar o index dos dados 
 #por questões download sem indice para deixar mais limpo
