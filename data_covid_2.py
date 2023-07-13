@@ -123,27 +123,6 @@ with col2:
         st.markdown(excel_link , unsafe_allow_html=True)
 
 
-#infomações globais uteis
 
-#plotar global reproduction rate
-#share of population with vaccinations in the last 3 months rolling  vs rolling 3 months.
-#global daily vaccination doses adm vs full vacinated.
-
-def data_for_fixed_viz(df):
-    df = df.query('location == ["World","South America","North America","Oceania","Africa","Asia"]').copy()
-    df = df[['location', 'date', 'reproduction_rate', 'people_fully_vaccinated_per_hundred','new_vaccinations']]
-
-    #transformando as bases de dados 
-    
-    return df 
-
-def plots_fixos(df):
-    fig = go.Figure()
-    colors = [ '#0A3254', '#7AADD4', '#B2292E','#336094', '#E0D253','#0A3264', '#8AADD4', '#B2290E','#339094', '#E0D353']
-    fig.add_trace(go.Scatter(x=df.index, y=df.iloc[:, i], line=dict(color=colors[i], width=2.25), name=df.columns[i]))
-
-
-#df_fixo = data_for_fixed_viz(df)
-#st.write(df_fixo)
 
 
